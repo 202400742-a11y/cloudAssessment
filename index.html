@@ -1,30 +1,124 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <nav class="bg-black">he
-        <U1 class="flex space-x-6">
-            <li>
-                <a href="./index.html" class="text-white">Home</a>
-            <li>
-            <li>
-                <a href="./about.html" class="text-white">About</a>
-            </li>
-            <li>
-                <a href="./contact.html" class="text-white">Contact</a>
-            </li>
-            <li>
-                <a href="./More.html" class="text-white">More</a>
-            </li>
-        </ul>
-    </nav>
-    <footer class="bg-yellow-500">
-<h1 class="text-red-500">
-     this is footer</h1>
-    </feoter>
-    </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagadeeswari's Portfolio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar with Gradient Background -->
+  <nav class="bg-gradient-to-r from-blue-500 to-purple-600 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-2xl font-bold">Jagadeeswari's Portfolio</a>
+      <ul class="flex space-x-6 text-white">
+        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Colorful Gradient Background -->
+  <section class="bg-gradient-to-r from-teal-400 to-blue-600 text-white text-center py-20">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-semibold">Hi, I'm Jagadeeswari</h1>
+      <p class="mt-4 text-xl">A passionate Web Developer</p>
+      <a href="#contact" class="mt-6 inline-block bg-yellow-500 text-black py-2 px-6 rounded-full text-xl hover:bg-yellow-400">Get in Touch</a>
+    </div>
+    <!-- Colorful Hero Image -->
+    <div class="mt-8">
+      <img src="https://www.w3schools.com/w3images/tech.jpg" alt="Hero Image" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- About Section with Background and Overlay -->
+  <section id="about" class="relative py-16 px-4 bg-gradient-to-r from-pink-400 to-yellow-400">
+    <div class="absolute inset-0 bg-black opacity-30"></div> <!-- Overlay for better text visibility -->
+    <div class="container mx-auto text-center relative z-10">
+      <h2 class="text-3xl font-semibold text-white">About Me</h2>
+      <p class="mt-4 max-w-2xl mx-auto text-lg text-white">
+        I'm Jagadeeswari, a Web Developer with 5+ years of experience. I love creating web applications that are both functional and user-friendly. My goal is to keep learning new skills and stay updated with the latest technologies.
+      </p>
+      <!-- Profile Image in About Section -->
+      <div class="mt-8">
+        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Jagadeeswari's Picture" class="w-40 h-40 mx-auto rounded-full border-4 border-white shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section with Colorful Background -->
+  <section id="skills" class="bg-gradient-to-r from-green-400 to-blue-500 py-16 px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-white">My Skills</h2>
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <div class="skill-card p-6 bg-yellow-500 text-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">HTML</h3>
+        </div>
+        <div class="skill-card p-6 bg-green-500 text-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">CSS</h3>
+        </div>
+        <div class="skill-card p-6 bg-blue-500 text-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">JavaScript</h3>
+        </div>
+        <div class="skill-card p-6 bg-red-500 text-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">React</h3>
+        </div>
+        <div class="skill-card p-6 bg-purple-500 text-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Node.js</h3>
+        </div>
+        <div class="skill-card p-6 bg-orange-500 text-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Git</h3>
+        </div>
+        <div class="skill-card p-6 bg-indigo-500 text-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+        </div>
+        <div class="skill-card p-6 bg-teal-500 text-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">MongoDB</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section with Background Color -->
+  <section id="projects" class="bg-gradient-to-r from-orange-400 to-red-500 py-16 px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-white">Projects</h2>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-gray-800">Project 1</h3>
+          <p class="mt-2 text-gray-700">A web application built with React, Node.js, and MongoDB. It allows users to manage their tasks effectively.</p>
+          <img src="https://via.placeholder.com/500x300/ff4500/ffffff?text=Project+1" alt="Project 1 Image" class="mt-4 rounded-lg shadow-md">
+          <a href="#" class="text-blue-600 hover:underline mt-4 block">View Project</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-gray-800">Project 2</h3>
+          <p class="mt-2 text-gray-700">A portfolio website built with HTML, CSS, and JavaScript. Showcases my projects and professional achievements.</p>
+          <img src="https://via.placeholder.com/500x300/2e8b57/ffffff?text=Project+2" alt="Project 2 Image" class="mt-4 rounded-lg shadow-md">
+          <a href="#" class="text-blue-600 hover:underline mt-4 block">View Project</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-gray-800">Project 3</h3>
+          <p class="mt-2 text-gray-700">An e-commerce site built with React and Firebase. Features shopping cart and user authentication.</p>
+          <img src="https://via.placeholder.com/500x300/8a2be2/ffffff?text=Project+3" alt="Project 3 Image" class="mt-4 rounded-lg shadow-md">
+          <a href="#" class="text-blue-600 hover:underline mt-4 block">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Gradient Background -->
+  <section id="contact" class="bg-gradient-to-r from-purple-500 to-pink-600 text-white py-16 px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Contact Me</h2>
+      <p class="mt-4 text-lg">Feel free to reach out to me for collaborations, questions, or just to chat!</p>
+      <a href="mailto:jagadeeswari@example.com" class="mt-6 inline-block bg-yellow-500 text-black py-2 px-6 rounded-full text-xl hover:bg-yellow-400">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  
